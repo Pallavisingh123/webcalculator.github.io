@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,8 @@
     background-color: white;
 
 }
-.container{
+
+.container {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -18,39 +19,40 @@
     background-image: linear-gradient(rgb(230, 231, 235), rgb(29, 118, 191));
     padding-bottom: 120px;
 }
-.h1{
-   
+
+.h1 {
+
     margin: 2px;
     background-color: none;
 }
-.calc{
-    box-shadow: 4px 4px,10px black,
-    4px 4px 10px white;
+
+.calc {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 28px;
     padding: 16px;
     display: grid;
-    grid-template-columns: repeat(4,66px);
+    grid-template-columns: repeat(4, 66px);
 }
-input{
+
+input {
     grid-column: span 4;
     height: 68px;
     width: 258px;
     box-shadow: inset -4px -4px 10px white,
-    inset 4px 4px 10px black;
+        inset 4px 4px 10px black;
     background-color: white;
     border: none;
     border-radius: 32px;
-    color: rgb(26,25,25);
+    color: rgb(26, 25, 25);
     text-align: end;
     margin: 40px 0px 30px 0px;
     padding: 20px;
     font-size: 40px;
 
 }
-button
-{
-    box-shadow: inset 6px 6px 13px white,
-    6px 6px 13px black;
+
+button {
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px;
     background-color: white;
     border: none;
     border-radius: 50px;
@@ -61,11 +63,32 @@ button
     font-size: 20px;
 
 }
-.equal{
+
+button:hover {
+    box-shadow: rgba(66, 66, 66, 0.5) 5px 5px 10px;
+    background-color: rgb(215, 215, 215);
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: ease 0.2s;
+}
+
+.equal {
     width: 120px;
     border-radius: 42px;
-    box-shadow: inset 6px 6px 13px white,
-    6px 6px 13px black;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px;
     background-color: white;
 
+}
+
+.equal:hover {
+    width: 120px;
+    border-radius: 42px;
+    box-shadow: rgba(66, 66, 66, 0.5) 5px 5px 10px;
+    background-color: rgb(215, 215, 215);
+    transition: ease 0.2s;
 }
